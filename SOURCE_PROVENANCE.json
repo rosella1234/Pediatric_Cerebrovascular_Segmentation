@@ -1,0 +1,75 @@
+{
+  "source_files": [
+    {
+      "filename": "check_size_test(2).sh",
+      "sha256": "45c184468a89b7e1911ccc653c2ee008e1ed525fdb6097b04103dc2fbc61cbff"
+    },
+    {
+      "filename": "dcm2nii_for_TOF_and_T1(2).sh",
+      "sha256": "a49f039d2bf4195a43d07e465d2f71889314f086ead61da4d925f583920b050b"
+    },
+    {
+      "filename": "distance_metrics(1).py",
+      "sha256": "d35c8de2922a695bc9e26bf05afeea9b0b85d25ff4edb1b99840fdf58fe984c1"
+    },
+    {
+      "filename": "hausdorff_metrics_comparison(1).mlx",
+      "sha256": "179f38dc60df1f47b9dd4c1d9eeb113a5b126ac77173175a51ebb83ba9ed3050"
+    },
+    {
+      "filename": "overlap_metrics(1).py",
+      "sha256": "4c38109ccb0afd94046933c7dc100c9c72d7feddfb5bcd0be9d632690797dc9f"
+    },
+    {
+      "filename": "overlap_metrics_comparison(1).mlx",
+      "sha256": "5f4e836fe068b227177434db67743e194c4988bcadfeed8a5c0decadf9572d90"
+    },
+    {
+      "filename": "run_nnunet_inference(5).sh",
+      "sha256": "8417f54703d28dda32c1e36c50d7ffc1272ac0aafae97dd04cea60501c774d61"
+    },
+    {
+      "filename": "train_and_test_nnunetv2_3D(4).sh",
+      "sha256": "5fd148aa1d8b289c55846d101141dc1b03525a1b24cf3d3e6c58a4fa2a919f2a"
+    }
+  ],
+  "upstream_nnunet_interface_ref": "https://github.com/MIC-DKFZ/nnUNet/tree/v2.6.2",
+  "note": "Only file hashes and names are included; original clinical identifiers, paths and source files are not distributed.",
+  "caravel_sources": [
+    {
+      "filename": "Atlas_Registration copia.py",
+      "sha256": "aed273327955a99a8caeacaad061e3481ff0b75fdcb0dc2303d5bee313ba9c13"
+    },
+    {
+      "filename": "CaravelMetrics copia.py",
+      "sha256": "401c7489e0c60f5ab77fa8a2fc4126fadf3ab46ecf329631acbbb1c3923741cc"
+    },
+    {
+      "filename": "CaravelMetrics_Stats_Analysis copia.ipynb",
+      "sha256": "f64120bc0d74b8d563709de950bacc896c89742f2da9d7a20a881aee4a946fee"
+    },
+    {
+      "filename": "Graph_extractor copia.py",
+      "sha256": "eebb03f657580d483483282ad5e423ac0fe127920cf87c42fc072ee3fab5c8f6"
+    },
+    {
+      "filename": "IXI_METADATA copia.xlsx",
+      "sha256": "68d13524bdb5314642a6235f331f5a07bd1bf08eff258bbf480138451daaf578"
+    },
+    {
+      "filename": "Metric_extractor copia.py",
+      "sha256": "989d75952aae7119e99e125ee20e169ec47054ec3028499ace94a3f4cefce621"
+    },
+    {
+      "filename": "requirements copia.txt",
+      "sha256": "87d919b192d9df2c718dd0dcba37b22df4ac4ff98ccd98cce19d665e686ce13b"
+    }
+  ],
+  "caravel_upstream_revision": "98482a029bd15d041466024eb741770a4f6f48d5",
+  "caravel_packaging_changes": [
+    "Normalized module names; preserved graph/metric calculations",
+    "Explicit subject-directory FSL crop output",
+    "Python translation of paper-relevant notebook cells; original workbook and notebook outputs excluded",
+    "One shared atlas registration and balanced subgroup per comparison"
+  ]
+}

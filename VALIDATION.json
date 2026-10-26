@@ -1,0 +1,66 @@
+{
+  "unit_tests_passed": 35,
+  "unit_tests_failed": 0,
+  "command": "python -m unittest discover -s tests -v",
+  "synthetic_demo_completed": true,
+  "synthetic_test_cases": 6,
+  "demo_includes_real_model_inference": false,
+  "original_metric_regression_checks": [
+    {
+      "seed": 0,
+      "overlap_agrees": true,
+      "HD95_AHD_legacy_bAHD_agree": true
+    },
+    {
+      "seed": 1,
+      "overlap_agrees": true,
+      "HD95_AHD_legacy_bAHD_agree": true
+    },
+    {
+      "seed": 2,
+      "overlap_agrees": true,
+      "HD95_AHD_legacy_bAHD_agree": true
+    },
+    {
+      "seed": 3,
+      "overlap_agrees": true,
+      "HD95_AHD_legacy_bAHD_agree": true
+    },
+    {
+      "seed": 4,
+      "overlap_agrees": true,
+      "HD95_AHD_legacy_bAHD_agree": true
+    }
+  ],
+  "tolerance": {
+    "rtol": 1e-12,
+    "atol": 1e-12
+  },
+  "real_DICOM_conversion_executed": false,
+  "GPU_training_or_inference_executed": false,
+  "versions": {
+    "python": "3.12.14",
+    "pediatric-tof-mra": "0.2.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "nibabel": "5.4.2",
+    "SimpleITK": "2.5.6",
+    "matplotlib": "3.10.8",
+    "nnunetv2": "not installed",
+    "torch": "not installed",
+    "networkx": "3.7",
+    "scikit-image": "0.26.0",
+    "scikit-learn": "1.8.0",
+    "nipype": "1.12.0",
+    "vedo": "2026.6.3",
+    "openpyxl": "3.1.5"
+  },
+  "caravel_synthetic_summary_demo_completed": true,
+  "caravel_demo_subjects": 19,
+  "caravel_demo_balanced_subjects": 12,
+  "real_caravel_graph_and_metric_modules_executed_on_synthetic_vessel": true,
+  "caravel_LPS_atlas_assignment_on_translated_anisotropic_grid_checked": true,
+  "FSL_registration_executed": false,
+  "clinical_Caravel_results_reproduced": false
+}

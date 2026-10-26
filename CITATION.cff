@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript and the underlying nnU-Net and CaravelMetrics methods when using this study pipeline. Publication metadata will be updated on acceptance."
+title: "Pediatric TOF-MRA: segmentation and evaluation code"
+type: software
+version: 0.2.0
+authors:
+  - family-names: "Trò"
+    given-names: "Rosella"
+  - family-names: "Crisci"
+    given-names: "Edoardo Fabrizio"
+  - family-names: "Morana"
+    given-names: "Giovanni"
+  - family-names: "Franchin"
+    given-names: "Emanuele"
+  - family-names: "Zuluaga"
+    given-names: "Maria"
+

@@ -1,0 +1,6 @@
+case_id,modality,series_dir
+dev001,tof,../data/dicom/dev001/TOF_SERIES
+dev001,t1,../data/dicom/dev001/T1_SERIES
+test001,tof,../data/dicom/test001/TOF_SERIES
+test001,t1,../data/dicom/test001/T1_SERIES
+

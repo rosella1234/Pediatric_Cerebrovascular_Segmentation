@@ -1,0 +1,114 @@
+{
+  "manifest": "../data/cases.csv",
+  "work_dir": "../work",
+  "dataset": {
+    "id": 66833,
+    "name": "GenovaVessel",
+    "channel_name": "CT",
+    "expected_development": 23,
+    "expected_validation": 5,
+    "expected_test": 19,
+    "resample_labels": true,
+    "splits_file": null
+  },
+  "nnunet": {
+    "raw": "../work/nnUNet_raw",
+    "preprocessed": "../work/nnUNet_preprocessed",
+    "results": "../work/nnUNet_results",
+    "executable_dir": null,
+    "device": "cuda",
+    "threads": 1,
+    "augmentation_processes": 2,
+    "preprocessing_processes": 4,
+    "prediction_processes": 2
+  },
+  "baseline": {
+    "dataset": "Dataset666_Vessel",
+    "results": "../models/baseline/nnUNet_results",
+    "configuration": "2d",
+    "folds": [
+      0
+    ],
+    "trainer": "nnUNetTrainer",
+    "plans": "nnUNetPlans",
+    "checkpoint": "checkpoint_final.pth",
+    "tta": true,
+    "step_size": 0.5
+  },
+  "pediatric": {
+    "configuration": "3d_fullres",
+    "fold": 0,
+    "trainer": "nnUNetTrainer",
+    "plans": "nnUNetPlans",
+    "checkpoint": "checkpoint_final.pth",
+    "tta": true,
+    "step_size": 0.5
+  },
+  "evaluation": {
+    "brain_mask_policy": "required",
+    "bahd_normalization": "reference",
+    "expected_pairs": 19,
+    "nonfinite_policy": "error",
+    "font_family": "Arial"
+  },
+  "caravel": {
+    "atlas": "../data/atlas/ArterialAtlas.nii.gz",
+    "label_map": "../data/atlas/ArterialAtlas_Labels.txt",
+    "registered_atlases": null,
+    "demographics": "../data/demographics.csv",
+    "balanced_cases_file": null,
+    "results_dirs": {
+      "baseline": null,
+      "pediatric": null
+    },
+    "region_labels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "age_bin_width": 5,
+    "seed": 42,
+    "minimum_age_n": 10,
+    "minimum_sex_n": 5,
+    "minimum_region_n": 5,
+    "plot_atlas": true,
+    "graph": {
+      "SMOOTH_ITERS": 2,
+      "SMOOTH_ALPHA": 0.8,
+      "INTENSITY_THRESHOLD": 0.6,
+      "MIN_COMPONENT_SIZE": 7,
+      "ORPHAN_DISTANCE_THRESHOLD": 2.5,
+      "MERGE_DISTANCE": 3.0,
+      "MIN_ANGLE": 30.0
+    }
+  }
+}

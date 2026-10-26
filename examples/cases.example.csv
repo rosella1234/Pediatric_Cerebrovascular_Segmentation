@@ -1,0 +1,5 @@
+case_id,subject_id,split,tof,label,brain_mask,t1
+dev001,dev001,development,../data/tof/dev001.nii.gz,../data/labels/dev001.nii.gz,,
+dev002,dev002,development,../data/tof/dev002.nii.gz,../data/labels/dev002.nii.gz,,
+test001,test001,test,../data/tof/test001.nii.gz,../data/labels/test001.nii.gz,../data/brain_masks/test001_mask.nii.gz,
+
